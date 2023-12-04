@@ -101,7 +101,7 @@ const SignUp = (props) => {
         </View>
       </View>
     </Background>
-  );
-};
+  )
+}
 
 export default SignUp;

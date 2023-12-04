@@ -64,7 +64,10 @@ const Login = (props) => {
             textColor="white"
             bgColor={darkGreen}
             btnLabel="Login"
-            Press={() => alert("Logged In")}
+            Press={() => {
+              alert("Logged In")
+              props.navigation.navigate("HomeScreen")
+            }}
           />
 
           <View
