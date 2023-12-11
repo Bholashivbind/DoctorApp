@@ -1,0 +1,22 @@
+{
+    "appointment": {
+      "patient": {
+        "name": "John Doe",
+        "dob": "1980-05-15",
+        "gender": "male",
+        "contact": "+1-555-1234",
+        "email": "john.doe@example.com"
+      },
+      "doctor": {
+        "name": "Dr. Smith",
+        "specialty": "Cardiologist",
+        "contact": "+1-555-5678",
+        "email": "dr.smith@example.com"
+      },
+      "datetime": "2023-12-15T10:30:00",
+      "reason": "Routine check-up",
+      "notes": "Patient has a history of high blood pressure. Medication adjustments may be needed.",
+      "status": "scheduled"
+    }
+}
+  

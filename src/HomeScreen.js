@@ -1,9 +1,9 @@
-import { View, Text, Image, ScrollView, ImageBackground} from 'react-native';
+import { View, Text, Image, ScrollView, ImageBackground, TouchableOpacity} from 'react-native';
 import React from 'react';
 
 
 const  BackImage = require("../src/assets/docBackground.jpg")
-const HomeScreen = () => {
+const HomeScreen = (props) => {
   return (
         <ImageBackground
             source={BackImage} style= {{flex:1, resizeMode:'cover', justifyContent:'center'}}>
@@ -16,13 +16,16 @@ const HomeScreen = () => {
                                 Search Doctors
                             </Text>
                         </View>
-                        <View style={{width:"30%", marginBottom:10}}>
-                            <Image source={require('./assets/imag.png')}
-                            style={{height:120, width: 120}} />
-                            <Text style={{fontWeight:"bold", textAlign:"center"}}>
-                                Dr. Lawangi
-                            </Text>
-                        </View>
+                        <TouchableOpacity 
+                        onPress={() => props.navigation.navigate("BookingScreenOne")}>
+                            <View style={{width:"30%", marginBottom:10}}>
+                                <Image source={require('./assets/imag.png')}
+                                style={{height:120, width: 120}} />
+                                <Text style={{fontWeight:"bold", textAlign:"center"}}>
+                                    Dr. Lawangi
+                                </Text>
+                            </View>
+                        </TouchableOpacity>
                         <View style={{width:"30%", marginBottom:10}}>
                             <Image source={require('./assets/imag.png')}
                             style={{height:120, width: 120}} />
