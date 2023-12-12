@@ -1,9 +1,9 @@
-import { View, Text, Image, StyleSheet, Button } from 'react-native'
+import { View, Text, Image, StyleSheet, Button, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Background from '../../Background'
 
-const DoctorImage = require("./th.jpeg")
-const BookingScreenTwo = () => {
+const DoctorImage = require("../BookingScreens/th.jpeg")
+const BookingScreenTwo = (props) => {
   return (
     <Background>
          <View style={styles.container}>
@@ -53,9 +53,11 @@ const BookingScreenTwo = () => {
                     <Text style={{fontWeight:'bold'}}>07:00 AM - 08:00 PM</Text>
                 </View> 
             </View>
-            <View style={styles.btn}>
-              <Button title="Book Appointment" />
-            </View>
+            <TouchableOpacity  onPress={() => props.navigation.navigate("BookingScreenThree")}>
+                <View style={styles.btn}>
+                <Button title="Book Appointment" />
+                </View>
+            </TouchableOpacity>
           </View>
         </View>
     </Background>

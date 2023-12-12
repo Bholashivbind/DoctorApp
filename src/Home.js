@@ -7,6 +7,7 @@ import Btn from './Btn';
 
 const Home = (props) => {
   return (
+    
     <Background>
       <View style={{ marginHorizontal: 40, marginVertical: 100 }}  >
         <Text style={{ color: 'black', fontSize: 64 }}>Let's start </Text>
@@ -18,6 +19,6 @@ const Home = (props) => {
   );
 };
 
-const styles = StyleSheet.create({});
+
 
 export default Home;

@@ -17,11 +17,11 @@ const HomeScreen = (props) => {
                             </Text>
                         </View>
                         <TouchableOpacity 
-                        onPress={() => props.navigation.navigate("BookingScreenOne")}>
+                            onPress={() => props.navigation.navigate("BookingScreenOne")}>
                             <View style={{width:"30%", marginBottom:10}}>
-                                <Image source={require('./assets/imag.png')}
+                                <Image source={require('../src/Screens/BookingScreens/th.jpeg')}
                                 style={{height:120, width: 120}} />
-                                <Text style={{fontWeight:"bold", textAlign:"center"}}>
+                                <Text style={{fontWeight:"bold",width:100, textAlign:"center"}}>
                                     Dr. Lawangi
                                 </Text>
                             </View>
